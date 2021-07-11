@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* zoom:100%; */
+}
+
+body {
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.top-section {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+}
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 220%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.collection {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.landing img {
+  width: 100%;
+  height: 140%;
+  position: absolute;
+  top: -8%;
+  left: 7%;
+  -webkit-transform: scale(0.84);
+          transform: scale(0.84);
+  opacity: 1;
+  z-index: 10000;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 14.5rem;
+  z-index: 101;
+}
+
+.typing {
+  position: absolute;
+  right: 24%;
+  top: 54rem;
+  width: 100rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.code h1 {
+  position: relative;
+  font-size: 6rem;
+  color: cornflowerblue;
+}
+
+.logo {
+  width: 20vw;
+  height: 100%;
+}
+
+.logo img {
+  position: relative;
+  top: -8rem;
+  left: -16rem;
+  width: 50rem;
+  height: 30rem;
+  -webkit-transform: scale(0.3);
+  transform: scale(0.25);
+  z-index: 102;
+}
+
+.mid-section {
+  width: 100vw;
+  height: 100%;
+  margin-top: 36%;
+}
+
+.box .front-face .icon {
+  height: 0rem;
+  margin: auto;
+}
+
+.box .front-face .icon i, .box .front-face span {
+  margin: auto;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  margin: 10.0rem 16.0rem auto;
+  grid-gap: 2.0rem;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+}
+
+.wrapper .box {
+  width: 35.0rem;
+  margin: 0 auto;
+  position: relative;
+  -webkit-perspective: 100.0rem;
+          perspective: 100.0rem;
+}
+
+.wrapper .box .front-face {
+  background: #fff;
+  height: 22.0rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 81, 250, 0.1);
+          box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 81, 250, 0.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.box .front-face .icon {
+  height: 0rem;
+}
+
+.box .front-face .icon i {
+  font-size: 6.5rem;
+}
+
+.box .front-face span,
+.box .back-face span {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .front-face .icon i,
+.box .front-face span {
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box .back-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 22.0rem;
+  width: 100%;
+  padding: 2.0rem;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-transform: translateY(110px) rotateX(-90deg);
+          transform: translateY(110px) rotateX(-90deg);
+  -webkit-box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 81, 250, 0.1);
+          box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 81, 250, 0.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.box .back-face p {
+  font-size: 1.5rem;
+  margin-top: 1.0rem;
+  text-align: justify;
+}
+
+.box:hover .back-face {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.box:hover .front-face {
+  opacity: 0;
+  -webkit-transform: translateY(-11rem) rotateX(90deg);
+          transform: translateY(-11rem) rotateX(90deg);
+}
+
+.mid-section h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  position: relative;
+  margin-left: 42%;
+  margin-bottom: -4rem;
+}
+
+.mid-section h1::after {
+  content: "";
+  width: 15rem;
+  height: 0.3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f44336), to(#9f4db5));
+  background: linear-gradient(to right, #f44336, #9f4db5);
+  position: absolute;
+  bottom: -2rem;
+  left: 18%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1025px) {
+  html {
+    font-size: 50%;
+  }
+  .image {
+    width: 50rem;
+    height: 50rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .sabkux {
+    padding: 0 6rem;
+    margin-top: 6rem;
+  }
+  .testimonials {
+    height: 78vh;
+  }
+  .main {
+    height: 160%;
+  }
+  .landing img {
+    top: 0%;
+    left: 8%;
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
+  }
+  .mid-section {
+    margin-top: 12%;
+  }
+  .heading h2 {
+    margin-top: -2rem;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  html {
+    font-size: 40%;
+  }
+  .image {
+    width: 40rem;
+    height: 40rem;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  .testimonials {
+    height: 64vh;
+    margin-top: 0rem;
+  }
+  .sabkux {
+    padding: 0rem 8rem;
+  }
+  .heading h1 {
+    left: 32vw;
+  }
+  .mid-section {
+    margin-top: 15%;
+  }
+  .landing img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -2%;
+    left: 10%;
+    -webkit-transform: scale(0.78);
+            transform: scale(0.78);
+    opacity: 1;
+  }
+  .main {
+    height: 160%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  html {
+    font-size: 35%;
+  }
+  .sabkux {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+    margin-top: 0rem;
+  }
+  .image {
+    width: 40rem;
+    height: 40rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .main {
+    height: 100%;
+  }
+  .mid-section {
+    margin-top: 4%;
+  }
+  h1 {
+    margin-left: 35%;
+  }
+  .wrapper {
+    margin: 10.0rem 2rem auto;
+  }
+  .heading h2 {
+    margin-bottom: 6rem;
+    font-size: 4rem;
+  }
+  .testimonials {
+    height: 64vh;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 30%;
+  }
+  .image {
+    width: 35rem;
+    height: 35rem;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  .review-box {
+    width: 100%;
+    max-width: 55rem;
+    min-width: 26rem;
+    height: 33rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: -1rem 1rem 4rem rgba(0, 0, 0, 0.25);
+            box-shadow: -1rem 1rem 4rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+  }
+  .sabkux {
+    padding: 0rem 4rem;
+  }
+  .wrapper .box {
+    width: 56rem;
+  }
+  .wrapper {
+    margin: 10.0rem 4rem auto;
+  }
+  .main {
+    height: 74%;
+  }
+  .mid-section {
+    margin-top: -8%;
+  }
+  .testimonials {
+    margin-top: -4rem;
+  }
+  .heading h2 {
+    margin-bottom: 8rem;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 25%;
+  }
+  .image {
+    width: 35rem;
+    height: 35rem;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .wrapper {
+    margin: 10.0rem 6rem auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,190 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    white-space: nowrap;
+}
+
+
+html{
+    font-size: 62.5%;;
+}
+.top-section{
+    position:relative;
+    width:100vw;
+    height:30vh;
+    box-sizing: border-box;
+    background:white;   
+}
+.main{
+    position:relative;
+    width:100vw;
+    height:220%;
+    box-sizing: border-box;
+    background-color:#fff;
+    opacity:1;
+}
+.collection{
+    position:absolute;
+    right:0%;
+    top:0%;
+    width:100%;
+    height:100%;
+    opacity:1;
+}
+
+.wave{
+    position:absolute;
+    left:0;
+    bottom:14.5rem;
+    z-index: 101;
+}
+.landing img{
+    width:100%;
+    height:140%;
+    position:absolute;
+    top:-8%;
+    left:7%;
+    transform: scale(0.84);
+    opacity: 1;
+    z-index: 10000;
+}
+
+
+  .typing{
+    position:absolute;
+    right:24%;
+    top:54rem;
+    width:100rem;
+    height:15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .code h1{
+    position:relative;
+    font-size: 6rem;
+    color:cornflowerblue;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 1440px){
+    .typing {
+        top: 48rem;
+    }
+    .wave{
+        bottom:10.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    html {
+        font-size: 50%;
+      }
+      .typing {
+        top: 60rem;
+        right:6%;
+    }
+    .wave{
+        bottom:24.5rem;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    html {
+        font-size: 40%;
+      }
+      .typing {
+        top: 80rem;
+        right:6%;
+    }
+    .wave{
+        bottom:38.5rem;
+    }
+    .landing img{
+        transform: scale(0.76);
+        width: 110%;
+        height: 150%;
+        left:0%;
+    }
+  }
+  @media only screen and (max-width: 426px){
+    html {
+        font-size: 35%;
+      }
+      .landing img{
+        transform: scale(0.64);
+        width: 150%;
+        height: 100%;
+        left:-18%;
+    }
+    .wave{
+        width: 110%;
+        bottom:56rem;
+    }
+    .typing {
+        top: 52rem;
+        right: -10%;
+    }
+    .code h1 {
+        position: relative;
+        font-size: 4rem;
+        color: cornflowerblue;
+    }
+    }
+  @media only screen and (max-width: 376px){
+    html {
+        font-size: 30%;
+      }
+      .landing img{
+        transform: scale(0.68);
+        width: 165%;
+        height: 100%;
+        left:-20%;
+    }
+    .wave{
+        width: 122%;
+        bottom:66rem;
+    }
+    .typing {
+        top: 62rem;
+        right: -22%;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    html {
+        font-size: 25%;
+      }
+      .typing {
+        top: 54rem;
+        right: -8%;
+      }    
+      .landing img {
+        transform: scale(0.66);
+        width: 165%;
+        height: 75%;
+        left: -20%;
+    }
+    .wave{
+        bottom:82rem;
+    }
+  }
+  
